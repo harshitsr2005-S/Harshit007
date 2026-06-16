@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Unnati ❤️</title>
+<style>
+body{
+margin:0;
+font-family:Arial,sans-serif;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+background:linear-gradient(135deg,#ff9a9e,#fad0c4);
+overflow:hidden;
+}
+.card{
+background:white;
+max-width:700px;
+padding:30px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+button{
+padding:12px 28px;
+margin:10px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+}
+#yes{background:#ff4d6d;color:white;}
+#no{background:#eee;}
+</style>
+</head>
+<body>
+<div class="card">
+<h1>💕 Hey Unnati 💕</h1>
+<p>
+Pata hai, duniya mein bahut log hain, lekin meri smile ka reason sirf ek hai... aur wo tum ho. ❤️<br><br>
+Jab bhi tumhara message aata hai, lagta hai din thoda aur khoobsurat ho gaya. ✨<br><br>
+🌹 Kya tum mere saath ek special date par chalogi? 🌹<br><br>
+Agar date par tum saamne baithi ho, to coffee se zyada nasha tumhari aankhon mein hoga. 😉💕
+</p>
+<button id="yes">YES ❤️</button>
+<button id="no">NO 😅</button>
+</div>
+
+<script>
+const noBtn=document.getElementById('no');
+noBtn.addEventListener('mouseover',()=>{
+ const x=Math.random()*(window.innerWidth-120);
+ const y=Math.random()*(window.innerHeight-60);
+ noBtn.style.position='absolute';
+ noBtn.style.left=x+'px';
+ noBtn.style.top=y+'px';
+});
+
+document.getElementById('yes').onclick=()=>{
+ document.body.innerHTML='<div style="font-family:Arial;text-align:center"><h1>🎉 Yay! ❤️</h1><h2>Thank you, Unnati 🌹</h2></div>';
+};
+</script>
+</body>
+</html>
